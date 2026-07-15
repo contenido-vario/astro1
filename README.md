@@ -15,10 +15,16 @@ export default defineConfig({
   },
 
   // Para publicar en Pages de Github Astro Estático
-  site: 'http://contenido-vario.github.io/',
-  base: '/astro1/',
+  site: 'http://contenido-vario.github.io/', // url de la cuenta
+  base: '/astro1/', // nombre del repositorio
 });
 ```
+### Ver el site en local
+
+Como se agregó la propiedad base: '/astro1/', Astro ahora espera que toda la página web funcione dentro de esa subcarpeta. Por eso, en lugar de buscar tu web en **localhost:4321**, ahora tienes que verla en:
+
+👉 **http://localhost:4321/astro1/**
+
 
 ### ¿Qué carpeta exactamente se sube?
 
