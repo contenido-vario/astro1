@@ -8,24 +8,19 @@ Hay que agregar al archivo `astro.config.mjs` las líneas con los parámetros `s
 import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 
-// https://astro.build/config
+// https://astro.build
 export default defineConfig({
   vite: {
-    base: '/astro1/', // <-- Para el plugin de Vite/Tailwind
     plugins: [tailwindcss()]
   },
 
-  // Para publicar en Pages de Github Astro Estático
-  site: 'https://contenido-vario.github.io', // <-- sin barra final
-  base: '/astro1/',
+  // Configuración de producción para GitHub Pages
+  site: 'https://contenido-vario.github.io',
+  
+  base: '/',
 });
+
 ```
-### Ver el site en local
-
-Como se agregó la propiedad `base: '/astro1/'`, Astro ahora espera que toda la página web funcione dentro de esa subcarpeta. Por eso, en lugar de buscar tu web en **localhost:4321**, ahora tienes que verla en:
-
-👉 **http://localhost:4321/astro1/**
-
 
 ### ¿Qué carpeta exactamente se sube?
 
