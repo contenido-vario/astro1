@@ -14,11 +14,17 @@ export default defineConfig({
     plugins: [tailwindcss()]
   },
 
+// Añade este bloque aquí abajo
+  build: {
+    assets: 'assets' // Cambia la carpeta '_astro' por 'assets'
+  },
+
   // Configuración de producción para GitHub Pages
   site: 'https://contenido-vario.github.io',
   
   base: '/',
 });
+
 
 ```
 
