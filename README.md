@@ -21,7 +21,7 @@ export default defineConfig({
 ```
 ### Ver el site en local
 
-Como se agregó la propiedad base: '/astro1/', Astro ahora espera que toda la página web funcione dentro de esa subcarpeta. Por eso, en lugar de buscar tu web en **localhost:4321**, ahora tienes que verla en:
+Como se agregó la propiedad `base: '/astro1/'`, Astro ahora espera que toda la página web funcione dentro de esa subcarpeta. Por eso, en lugar de buscar tu web en **localhost:4321**, ahora tienes que verla en:
 
 👉 **http://localhost:4321/astro1/**
 
