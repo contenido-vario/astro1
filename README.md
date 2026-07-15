@@ -22,7 +22,7 @@ export default defineConfig({
   // Configuración de producción para GitHub Pages
   site: 'https://contenido-vario.github.io',
   
-  base: '/',
+  base: '/astro1/',
 });
 
 
