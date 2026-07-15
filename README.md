@@ -11,12 +11,13 @@ import tailwindcss from '@tailwindcss/vite';
 // https://astro.build/config
 export default defineConfig({
   vite: {
+    base: '/astro1/', // <-- Para el plugin de Vite/Tailwind
     plugins: [tailwindcss()]
   },
 
   // Para publicar en Pages de Github Astro Estático
-  site: 'http://contenido-vario.github.io/', // url de la cuenta
-  base: '/astro1/', // nombre del repositorio
+  site: 'https://contenido-vario.github.io', // <-- sin barra final
+  base: '/astro1/',
 });
 ```
 ### Ver el site en local
